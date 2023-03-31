@@ -5,7 +5,7 @@
   --font-family: "Segoe UI";
   --fontSize-head: 18px;
   --fontSize-para: 14px;
-  --color-yellow: #f1c40f;
+  --color-blue: #2194f0;
 }
 
 /* UNIVERSAL STYLING */
@@ -18,17 +18,213 @@
 
 body {
   width: 100%;
+  margin: auto;
+  background-color: black;
+  position: relative;
+  transition: 1s;
   height: 100vh;
 }
 
-header,
-footer p {
+i {
+  color: grey;
+  padding-right: 5px;
+}
+
+/* HEADING */
+header {
+  background-color: black;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.562);
+}
+
+header .sub-container {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  padding: 10px;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.by {
+  color: grey;
+}
+
+/* OTHER CHEAT SHEETs */
+.other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.other-links-top,
+.other-links-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.other-links-top a,
+.other-links-bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o_cs {
+  background-color: rgb(27, 27, 27);
+  padding: 7px 13px;
+  border-radius: 5px;
+}
+
+.other-links-bottom {
+  display: none;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: white;
+  transition: 1s;
+}
+
+/* PAGE TOP & BOTTOM */
+.top-bottom {
+  z-index: 10;
+  position: fixed;
+  right: -2px;
+  bottom: 70px;
+  opacity: 0.2;
+}
+.top-bottom i,
+.fa-link,
+.social-media i {
+  padding-right: 8px;
+}
+
+.top-bottom:hover {
+  transition: 0.7s;
+  opacity: 1;
+}
+.top-bottom * {
+  font-size: 27px;
+  margin-top: 5px;
+}
+
+/* PAGE TOP & BOTTOM */
+.top-bottom {
+  z-index: 10;
+  position: fixed;
+  right: -2px;
+  bottom: 70px;
+  opacity: 0.2;
+}
+.top-bottom i,
+.fa-link,
+.social-media i {
+  padding-right: 8px;
+}
+
+.top-bottom:hover {
+  transition: 0.7s;
+  opacity: 1;
+}
+.top-bottom * {
+  font-size: 27px;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  padding: 18px;
+  margin-top: 20px;
   text-align: center;
-  padding: 20px 0;
+  color: white;
+  font-weight: 300;
+  background-color: black;
+  border-top: 1px #f8835f solid;
+  display: flex;
+  justify-content: space-around;
 }
 
-footer p {
-  opacity: 0.8;
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
-/* START FROM HERE */
+footer a:hover {
+  transition: 0.3s;
+  color: #f8835f;
+}
+
+footer span {
+  color: grey;
+}
+
+footer .social-media {
+  font-size: large;
+}
+
+footer .social-media * {
+  margin-left: 3px;
+}
+
+/* MEDIA QUERY|Tablet */
+@media screen and (max-width: 910px) {
+  footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .my-projects {
+    display: none;
+  }
+}
+
+/* MEDIA QUERY | Mobile */
+@media screen and (max-width: 520px) {
+  .by {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  li a span {
+    display: block;
+  }
+
+  .describe {
+    padding-left: 20px;
+  }
+
+  .inputs-card li a .describe {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .cb-credit {
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+
+  .other-links-top {
+    display: none;
+  }
+  .other-links-bottom {
+    display: inherit;
+    width: fit-content;
+    margin: auto;
+  }
+}

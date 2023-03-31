@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Cheat Sheet | By CodeBustler</title>
-    <link rel="shortcut icon" href="./img/.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/css.png" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,9 +15,26 @@
 </head>
 
 <body>
+    <!-- TOP -->
+    <div id="home"></div>
     <!-- HEADER -->
     <header>
-        <h1 id="title">Age Calculator</h1>
+        <div class="sub-container">
+            <div class="title">
+                <h1><img src="./img/css.png" alt="" width="20px"> CSS Cheat Sheet <span class="by"> By
+                        CodeBustler</span></h1>
+            </div>
+            <div class="other">
+                <div class="other-links-top o_cs">
+                    <a href="https://codebustler.github.io/HTML-CheatSheet"><img src="./img/html.png" alt=""
+                            width="20px" title="HTML CheatSheet"></a>
+                    <a href="https://codebustler.github.io/JS-CheatSheet"><img src="./img/js.png" alt="" width="20px"
+                            title="JavaScript CheatSheet"></a>
+                </div>
+                <div style="color:grey"></div>
+                <div onclick="myFunction()"><i class="fa-solid fa-circle-half-stroke"></i></div>
+            </div>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -25,10 +42,34 @@
 
     </main>
 
+    <!-- TOP & BOTTTOM ICON -->
+    <!-- <div class="top-bottom">
+        <div class="top"><a href="#home"><i class="fa-solid fa-circle-up"></i></a></div>
+        <div class="bottom"><a href="#bottom"><i class="fa-solid fa-circle-down"></i></a></div>
+    </div> -->
+
     <!-- FOOTER -->
-    <footer>
-        <p>By CodeBustler</p>
-    </footer>
+    <!-- <footer id="bottom">
+        <div class="other-links-bottom o_cs">
+            <a href=""><img src="./img/css.png" alt="" width="20px" title="CSS CheatSheet"></a>
+            <a href=""><img src="./img/js.png" alt="" width="20px" title="JavaScript CheatSheet"></a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/codebustler/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@codebustler" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/CodeBustler" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/mallikarjun-mavnoor" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="cb-credit">
+            <a href="https://linktr.ee/codebustler" target="_blank">Copyright &copy; 2023 | <span id="cb">By
+                    CodeBustler</span></a>
+        </div>
+        <div class="my-projects">
+            <a href="https://codebustler.github.io/myProjects/" target="_blank"><i class="fa-solid fa-code"></i>My
+                Projects</a>
+        </div>
+    </footer> -->
 
     <!-- SCRIPTs -->
     <script src="./js/script.js"></script>
