@@ -1,0 +1,34 @@
+/* FONT APIs */
+
+/* VARIABLES */
+:root {
+  --font-family: "Segoe UI";
+  --fontSize-head: 18px;
+  --fontSize-para: 14px;
+  --color-yellow: #f1c40f;
+}
+
+/* UNIVERSAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+header,
+footer p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  opacity: 0.8;
+}
+
+/* START FROM HERE */
