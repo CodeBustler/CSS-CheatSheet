@@ -1,4 +1,22 @@
 /* CONTENT BOX STYLING */
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content-box {
   flex: 1 1 auto;
   margin: 20px;
@@ -7,6 +25,7 @@
   padding: 8px 0;
   border-radius: 10px;
   width: 400px;
+  /* min-width: 350px; */
   height: max-content;
   background-color: rgb(27, 27, 27);
   border: 1px solid rgba(128, 128, 128, 0.315);
@@ -23,11 +42,11 @@
   padding: 10px 15px;
   border-top: 1px solid rgba(128, 128, 128, 0.253);
 }
-/* 
-.list-container {
-  width: 90%;
-  margin: auto;
-} */
+
+.concept-list img {
+  width: 100%;
+  margin: 10px 0;
+}
 
 .concept-list a {
   color: white;
@@ -55,10 +74,24 @@
 }
 
 .concept-sub-title {
-  padding: 6px;
-  color
+  padding: 5px;
+  color: lightsalmon;
   text-align: center;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: rgb(42, 42, 42);
+}
+
+.fa-star {
+  font-size: 10px;
+  margin-bottom: 3px;
+  color: gold;
+  margin-left: -8px;
+}
+
+@media only screen and (max-width: 420px) {
+  .content-box {
+    width: 95%;
+    margin: 10px 0;
+  }
 }

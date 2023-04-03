@@ -18,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-poppins);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -156,6 +157,7 @@ header h1 {
   opacity: 1;
 }
 .top-bottom * {
+  color: grey;
   font-size: 27px;
   margin-top: 5px;
 }
@@ -168,7 +170,7 @@ footer {
   color: white;
   font-weight: 300;
   background-color: black;
-  border-top: 1px #f8835f solid;
+  border-top: 1px var(--color-blue) solid;
   display: flex;
   justify-content: space-around;
 }
@@ -180,9 +182,10 @@ footer a {
 
 footer a:hover {
   transition: 0.3s;
-  color: #f8835f;
+  color: var(--color-blue);
 }
 
+footer i,
 footer span {
   color: grey;
 }
